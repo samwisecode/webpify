@@ -257,18 +257,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "img2webp"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "clap",
- "image",
- "rayon",
- "walkdir",
- "webp",
-]
-
-[[package]]
 name = "is_terminal_polyfill"
 version = "1.70.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -476,6 +464,18 @@ checksum = "c071456adef4aca59bf6a583c46b90ff5eb0b4f758fc347cea81290288f37ce1"
 dependencies = [
  "image",
  "libwebp-sys",
+]
+
+[[package]]
+name = "webpify"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "clap",
+ "image",
+ "rayon",
+ "walkdir",
+ "webp",
 ]
 
 [[package]]

@@ -1,5 +1,5 @@
 [package]
-name = "img2webp"
+name = "webpify"
 version = "0.1.0"
 edition = "2024"
 license = "MIT"
@@ -15,7 +15,7 @@ walkdir = "2.5.0"
 webp = "0.3.1"
 
 [[bin]]
-name = "img2webp"
+name = "webpify"
 path = "src/main.rs"
 
 # The profile that 'dist' will build with

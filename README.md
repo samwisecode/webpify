@@ -1,4 +1,4 @@
-# img2webp
+# webpify
 
 A fast command-line tool that converts JPEG and PNG images to WebP, tuned for high visual quality at small file sizes.
 
@@ -15,13 +15,13 @@ A fast command-line tool that converts JPEG and PNG images to WebP, tuned for hi
 macOS and Linux:
 
 ```sh
-curl --proto '=https' --tlsv1.2 -LsSf https://github.com/samwisecode/img2webp/releases/latest/download/img2webp-installer.sh | sh
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/samwisecode/img2webp/releases/latest/download/webpify-installer.sh | sh
 ```
 
 Windows (PowerShell):
 
 ```powershell
-powershell -ExecutionPolicy Bypass -c "irm https://github.com/samwisecode/img2webp/releases/latest/download/img2webp-installer.ps1 | iex"
+powershell -ExecutionPolicy Bypass -c "irm https://github.com/samwisecode/img2webp/releases/latest/download/webpify-installer.ps1 | iex"
 ```
 
 Archives for each platform are also attached to every [GitHub release](https://github.com/samwisecode/img2webp/releases).
@@ -36,13 +36,13 @@ cargo install --path .
 
 # Or build without installing
 cargo build --release
-# Binary is at target/release/img2webp
+# Binary is at target/release/webpify
 ```
 
 ## Usage
 
 ```sh
-img2webp [OPTIONS] <INPUTS>...
+webpify [OPTIONS] <INPUTS>...
 ```
 
 `INPUTS` can be any mix of `.jpg`, `.jpeg` and `.png` files and directories. Extensions are matched case-insensitively.
@@ -51,22 +51,22 @@ img2webp [OPTIONS] <INPUTS>...
 
 ```sh
 # Convert one image; writes photo.webp next to photo.jpg
-img2webp photo.jpg
+webpify photo.jpg
 
 # Convert everything under ./images, writing each .webp next to its source
-img2webp images/
+webpify images/
 
 # Write output to a separate folder, mirroring the input folder structure
-img2webp images/ --out-dir dist/images
+webpify images/ --out-dir dist/images
 
 # Smaller files at slightly lower quality, and skip any that would grow
-img2webp images/ -q 75 --skip-larger
+webpify images/ -q 75 --skip-larger
 
 # Faster encoding with less compression effort
-img2webp images/ -m 4
+webpify images/ -m 4
 
 # Re-run and replace existing .webp files
-img2webp images/ --overwrite
+webpify images/ --overwrite
 ```
 
 ### Options
