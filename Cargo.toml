@@ -4,7 +4,7 @@ version = "0.1.1"
 edition = "2024"
 license = "MIT"
 description = "Convert JPEG and PNG images to WebP, aiming for high visual quality at small file sizes"
-repository = "https://github.com/samwisecode/img2webp"
+repository = "https://github.com/samwisecode/webpify"
 
 [dependencies]
 anyhow = "1.0.104"

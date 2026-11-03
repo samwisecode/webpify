@@ -15,16 +15,16 @@ A fast command-line tool that converts JPEG and PNG images to WebP, tuned for hi
 macOS and Linux:
 
 ```sh
-curl --proto '=https' --tlsv1.2 -LsSf https://github.com/samwisecode/img2webp/releases/latest/download/webpify-installer.sh | sh
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/samwisecode/webpify/releases/latest/download/webpify-installer.sh | sh
 ```
 
 Windows (PowerShell):
 
 ```powershell
-powershell -ExecutionPolicy Bypass -c "irm https://github.com/samwisecode/img2webp/releases/latest/download/webpify-installer.ps1 | iex"
+powershell -ExecutionPolicy Bypass -c "irm https://github.com/samwisecode/webpify/releases/latest/download/webpify-installer.ps1 | iex"
 ```
 
-Archives for each platform are also attached to every [GitHub release](https://github.com/samwisecode/img2webp/releases).
+Archives for each platform are also attached to every [GitHub release](https://github.com/samwisecode/webpify/releases).
 
 ### From source
 
